@@ -1,0 +1,151 @@
+/* =====================================================
+   MiniMart - Global Stylesheet
+   ===================================================== */
+
+:root {
+    --brand-primary: #2f6f4f;
+    --brand-dark: #1f4d36;
+    --brand-light: #eaf5ee;
+    --brand-accent: #e8a33d;
+}
+
+body {
+    background-color: #f7f8f7;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+/* Navbar */
+.navbar-minimart {
+    background-color: var(--brand-dark);
+}
+
+.navbar-minimart .navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-minimart .nav-link {
+    color: #e8f0ea !important;
+}
+
+.navbar-minimart .nav-link:hover {
+    color: var(--brand-accent) !important;
+}
+
+/* Buttons */
+.btn-brand {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: var(--brand-dark);
+    border-color: var(--brand-dark);
+    color: #fff;
+}
+
+.btn-accent {
+    background-color: var(--brand-accent);
+    border-color: var(--brand-accent);
+    color: #2b2b2b;
+}
+
+.btn-accent:hover {
+    background-color: #d18f28;
+    border-color: #d18f28;
+    color: #2b2b2b;
+}
+
+/* Hero */
+.hero-section {
+    background: linear-gradient(135deg, var(--brand-dark), var(--brand-primary));
+    color: #fff;
+    padding: 70px 20px;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 30px;
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    background-color: #eee;
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--brand-primary);
+    font-size: 1.2rem;
+}
+
+.category-badge {
+    background-color: var(--brand-light);
+    color: var(--brand-dark);
+    font-weight: 500;
+}
+
+/* Cart / Order Rows */
+.cart-item-row, .order-card {
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+/* Forms */
+.form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* Status badges */
+.status-PLACED { background-color: #6c757d; }
+.status-SHIPPED { background-color: #0d6efd; }
+.status-DELIVERED { background-color: #198754; }
+
+/* Footer */
+.footer-minimart {
+    background-color: var(--brand-dark);
+    color: #e8f0ea;
+    padding: 20px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Payment method cards */
+.payment-option {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.payment-option.selected {
+    border-color: var(--brand-primary);
+    background-color: var(--brand-light);
+}
+
+/* Utility */
+.section-title {
+    font-weight: 700;
+    color: var(--brand-dark);
+    margin-bottom: 20px;
+}
